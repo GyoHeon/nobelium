@@ -2,13 +2,13 @@ const BLOG = {
   title: 'TECH BLOG',
   author: 'Gyoheon Lee',
   email: 'ghl12078@gmail.com',
-  link: 'https://nobelium-dmjo3t1sh-gyoheonlee.vercel.app',
+  link: 'https://gyoheonlee.vercel.app',
   description: 'Will be good.',
   lang: 'ko', // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES']
   appearance: 'dark', // ['light', 'dark', 'auto'],
   font: 'sans-serif', // ['sans-serif', 'serif']
   lightBackground: '#ffffff', // use hex value, don't forget '#' e.g #fffefc
-  darkBackground: '#18181B', // use hex value, don't forget '#'
+  darkBackground: '#403a35', // use hex value, don't forget '#'
   path: '', // leave this empty unless you want to deploy Nobelium in a folder
   since: 2022, // If leave this empty, current year will be used.
   postsPerPage: 7,
