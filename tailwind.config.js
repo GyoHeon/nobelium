@@ -20,7 +20,8 @@ module.exports = {
         },
         night: {
           DEFAULT: BLOG.darkBackground || '#403a35'
-        }
+        },
+        'default-dark': '#403a35'
       },
       fontFamily: {
         sans: ['"IBM Plex Sans"', ...fontFamily.sans, ...fontSansCJK],
