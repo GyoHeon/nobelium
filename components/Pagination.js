@@ -19,7 +19,7 @@ const Pagination = ({ page, showNext }) => {
         }
       >
         <a>
-          <button rel="prev" className="page-button group-hover:to-yellow-200 group-hover:via-red-300 group-hover:from-red-200 group">
+          <button rel="prev" className="page-button group-hover:to-yellow-200 group-hover:via-red-300 group-hover:from-red-200 group bg-[#403a35]">
             <span className="page-span">
               ← {locale.PAGINATION.PREV}
             </span>
@@ -30,7 +30,7 @@ const Pagination = ({ page, showNext }) => {
       {showNext && (
         <Link href={`/page/${currentPage + 1}`}>
           <a>
-            <button rel="next" className="page-button group-hover:to-yellow-200 group-hover:via-red-300 group-hover:from-red-200 group">
+            <button rel="next" className="page-button group-hover:to-yellow-200 group-hover:via-red-300 group-hover:from-red-200 group bg-[#403a35]">
               <span className="page-span">
                 {locale.PAGINATION.NEXT} →
               </span>
