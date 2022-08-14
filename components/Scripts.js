@@ -3,13 +3,6 @@ import BLOG from '@/blog.config'
 
 const Scripts = () => (
   <>
-    {BLOG.analytics && BLOG.analytics.provider === 'ackee' && (
-      <Script
-        src={BLOG.analytics.ackeeConfig.tracker}
-        data-ackee-server={BLOG.analytics.ackeeConfig.dataAckeeServer}
-        data-ackee-domain-id={BLOG.analytics.ackeeConfig.domainId}
-      />
-    )}
     {/* {BLOG.autoCollapsedNavBar === true && (
       <Script strategy="lazyOnload">
         {`var windowTop=0;
