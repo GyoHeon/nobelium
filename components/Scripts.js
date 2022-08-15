@@ -20,21 +20,18 @@ const Scripts = () => (
           window.addEventListener('scroll',scrollTrigger);`}
       </Script>
     )} */}
-    {BLOG.analytics && BLOG.analytics.provider === 'ga' && (
-      <>
-        <Script
-          src={`https://www.googletagmanager.com/gtag/js?id=${BLOG.analytics.gaConfig.measurementId}`}
-        />
-        <Script strategy="lazyOnload" id="ga">
-          {`window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${BLOG.analytics.gaConfig.measurementId}', {
-              page_path: window.location.pathname,
-            });`}
-        </Script>
-      </>
-    )}
+    <Script
+      src={`https://www.googletagmanager.com/gtag/js?id=${BLOG.analytics.gaConfig.measurementId}`}
+      strategy="afterInteractive"
+    />
+    <Script strategy="afterInteractive" id="ga">
+      {`
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){window.dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', '${BLOG.analytics.gaConfig.measurementId}');
+      `}
+    </Script>
   </>
 )
 

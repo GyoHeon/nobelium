@@ -7,10 +7,10 @@ const BLOG = {
   lang: 'ko', // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES']
   appearance: 'dark', // ['light', 'dark', 'auto'],
   font: 'sans-serif', // ['sans-serif', 'serif']
-  lightBackground: '#ffffff', // use hex value, don't forget '#' e.g #fffefc
-  darkBackground: '#403a35', // use hex value, don't forget '#'
+  lightBackground: '#ffffff', // use hex value, don't forget
+  darkBackground: '#403a35',
   path: '', // leave this empty unless you want to deploy Nobelium in a folder
-  since: 2022, // If leave this empty, current year will be used.
+  since: 2022,
   postsPerPage: 7,
   sortByDate: true,
   showAbout: true,
@@ -22,12 +22,12 @@ const BLOG = {
     keywords: ['Blog', 'Website', 'Notion'],
     googleSiteVerification: '' // Remove the value or replace it with your own google site verification code
   },
-  notionPageId: process.env.NOTION_PAGE_ID, // DO NOT CHANGE THIS！！！
+  notionPageId: process.env.NOTION_PAGE_ID,
   notionAccessToken: process.env.NOTION_ACCESS_TOKEN, // Useful if you prefer not to make your database public
   analytics: {
-    provider: 'ga', // Currently we support Google Analytics and Ackee, please fill with 'ga' or 'ackee', leave it empty to disable it.
+    provider: 'ga',
     gaConfig: {
-      measurementId: process.env.GA_ID // e.g: G-XXXXXXXXXX
+      measurementId: process.env.GA_ID
     }
   },
   comment: {
