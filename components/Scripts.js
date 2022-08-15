@@ -24,7 +24,7 @@ const Scripts = () => (
       src={`https://www.googletagmanager.com/gtag/js?id=${BLOG.analytics.gaConfig.measurementId}`}
       strategy="afterInteractive"
     />
-    <Script strategy="afterInteractive" id="ga">
+    <Script strategy="afterInteractive" id="google-analytics">
       {`
         window.dataLayer = window.dataLayer || [];
         function gtag(){window.dataLayer.push(arguments);}
