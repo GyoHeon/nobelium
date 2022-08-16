@@ -75,7 +75,7 @@ class MyDocument extends Document {
                 page_path: window.location.pathname,
               });
             `
-            }} 
+            }}
           />
         </Head>
         <body className="bg-day dark:bg-night">
