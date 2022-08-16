@@ -60,7 +60,7 @@ class MyDocument extends Document {
           <link rel="apple-touch-icon" sizes="192x192" href="/apple-touch-icon.png"></link>
           <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="/feed"></link>
           <meta name="theme-color" content={BLOG.darkBackground} />
-          <Script
+          <script
             async
             src={`https://www.googletagmanager.com/gtag/js?id=${BLOG.analytics.gaConfig.measurementId}`}
           />
