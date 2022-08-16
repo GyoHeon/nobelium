@@ -64,7 +64,7 @@ class MyDocument extends Document {
             async
             src={`https://www.googletagmanager.com/gtag/js?id=${BLOG.analytics.gaConfig.measurementId}`}
           />
-          <script 
+          <script
           dangerouslySetInnerHTML={
             {
               __html: `
@@ -74,7 +74,7 @@ class MyDocument extends Document {
               gtag('config', '${BLOG.analytics.gaConfig.measurementId}', {
                 page_path: window.location.pathname,
               });
-            `,
+            `
             }} 
           />
         </Head>
