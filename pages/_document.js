@@ -1,6 +1,8 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
 import BLOG from '@/blog.config'
 import CJK from '@/lib/cjk'
+import Scripts from '@/components/Scripts'
+
 class MyDocument extends Document {
   static async getInitialProps (ctx) {
     const initialProps = await Document.getInitialProps(ctx)
@@ -59,6 +61,7 @@ class MyDocument extends Document {
           <link rel="apple-touch-icon" sizes="192x192" href="/apple-touch-icon.png"></link>
           <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="/feed"></link>
           <meta name="theme-color" content={BLOG.darkBackground} />
+          <Scripts />
         </Head>
         <body className="bg-day dark:bg-night">
           <Main />

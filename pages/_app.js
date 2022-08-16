@@ -6,14 +6,12 @@ import '@/styles/notion.css'
 import BLOG from '@/blog.config'
 import dynamic from 'next/dynamic'
 import { LocaleProvider } from '@/lib/locale'
-import Scripts from '@/components/Scripts'
 
 const Gtag = dynamic(() => import('@/components/Gtag'), { ssr: false })
 
 function MyApp ({ Component, pageProps }) {
   return (
     <>
-      <Scripts />
       <LocaleProvider>
         <>
           {BLOG.isProd && <Gtag />}
