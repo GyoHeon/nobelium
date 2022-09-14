@@ -2,6 +2,7 @@ import { useEffect, useRef } from 'react'
 import Link from 'next/link'
 import BLOG from '@/blog.config'
 import { useLocale } from '@/lib/locale'
+import Image from 'next/image'
 
 const NavBar = () => {
   const locale = useLocale()
@@ -14,6 +15,13 @@ const NavBar = () => {
   return (
     <div className="flex-shrink-0">
       <ul className="flex flex-row">
+        <li className="block ml-4 text-black dark:text-gray-50 nav">
+          <Link href='https://github.com/GyoHeonLee'>
+            <a>
+              <Image src='gitHub.jpeg' width={24} height={24}/>
+            </a>
+          </Link>
+        </li>
         {links.map(
           link =>
             link.show && (
