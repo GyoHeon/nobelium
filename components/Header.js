@@ -110,14 +110,14 @@ const Header = ({ navBarTitle, fullWidth }) => {
           </Link>
           {navBarTitle
             ? (
-            <p className="ml-2 font-medium text-black dark:text-gray-50 header-name">
+            <p className="ml-2 mr-2 font-medium text-black dark:text-gray-50 header-name">
               {navBarTitle}
             </p>
               )
             : (
             <p className="ml-2 font-medium text-black dark:text-gray-50 header-name">
               {BLOG.title},{' '}
-              <span className="font-normal">{BLOG.description}</span>
+              <span className="mr-2 font-normal">{BLOG.description}</span>
             </p>
               )}
           <a href="https://hits.seeyoufarm.com">
