@@ -108,21 +108,21 @@ const Header = ({ navBarTitle, fullWidth }) => {
               </div>
             </a>
           </Link>
-          <a href="https://hits.seeyoufarm.com">
-            <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgyoheonlee.vercel.app&count_bg=%230069FF&title_bg=%23848484&icon=&icon_color=%232F2727&title=hits&edge_flat=true"/>
-          </a>
           {navBarTitle
             ? (
-            <p className="ml-2 font-medium text-day dark:text-night header-name">
+            <p className="ml-2 font-medium text-black dark:text-gray-50 header-name">
               {navBarTitle}
             </p>
               )
             : (
-            <p className="ml-2 font-medium text-day dark:text-night header-name">
+            <p className="ml-2 font-medium text-black dark:text-gray-50 header-name">
               {BLOG.title},{' '}
               <span className="font-normal">{BLOG.description}</span>
             </p>
               )}
+          <a href="https://hits.seeyoufarm.com">
+            <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgyoheonlee.vercel.app&count_bg=%230069FF&title_bg=%23848484&icon=&icon_color=%232F2727&title=hits&edge_flat=true"/>
+          </a>
         </div>
         <NavBar />
       </div>
