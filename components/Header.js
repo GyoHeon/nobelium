@@ -18,7 +18,7 @@ const NavBar = () => {
         <li className="block ml-4 text-black dark:text-gray-50 nav">
           <Link href='https://github.com/GyoHeonLee'>
             <a>
-              <Image src='gitHub.jpeg' width={24} height={24}/>
+              <Image src='gitHub.png' width={24} height={24}/>
             </a>
           </Link>
         </li>
