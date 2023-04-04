@@ -1,8 +1,8 @@
-import { useEffect, useRef } from 'react'
-import Link from 'next/link'
 import BLOG from '@/blog.config'
 import { useLocale } from '@/lib/locale'
 import Image from 'next/image'
+import Link from 'next/link'
+import { useEffect, useRef } from 'react'
 
 const NavBar = () => {
   const locale = useLocale()
@@ -16,7 +16,7 @@ const NavBar = () => {
     <div className="flex-shrink-0">
       <ul className="flex flex-row">
         <li className="block ml-4 text-black dark:text-gray-50 nav">
-          <Link href='https://github.com/GyoHeonLee'>
+          <Link href='https://github.com/GyoHeon'>
             <a>
               <Image src='gitHub.png' width={24} height={24} alt="github mark"/>
             </a>
